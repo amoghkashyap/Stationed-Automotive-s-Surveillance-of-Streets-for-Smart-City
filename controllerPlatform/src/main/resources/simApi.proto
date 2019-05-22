@@ -1,0 +1,39 @@
+
+syntax="proto3";
+
+package simApi.rpc;
+
+
+
+option java_multiple_files = true;
+option java_package = "com.nokia.hackathon.simApi.rpc";
+option java_outer_classname = "RecognitionApi";
+
+service simApi{
+	
+  
+  rpc NumberRecognition(numberRequest) returns (numberResponse){};
+
+  rpc PlateRecognition(plateRequest) returns (plateResponse){};
+
+}
+
+message numberRequest{
+
+	string plate_no = 1;
+}
+
+message numberResponse{
+
+	string phone_no = 1;
+}
+
+message plateRequest{
+	
+	int32 image = 1;
+}
+
+message plateResponse{
+	
+	string plate_no = 1;
+}

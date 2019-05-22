@@ -1,0 +1,31 @@
+
+syntax="proto3";
+
+package simulation.rpc;
+
+
+
+option java_multiple_files = true;
+option java_package = "com.nokia.hackathon.simulation.rpc";
+option java_outer_classname = "simulation";
+
+service simulationApi{
+	
+  
+  rpc carDetection(detectionRequest) returns (response){};
+
+}
+
+message detectionRequest{
+
+         int32 imageID =1;
+         string latitude=2;
+         string longitude =3;
+         string status =4;
+         string parkedTime =5;
+}
+
+message response{
+
+	
+}

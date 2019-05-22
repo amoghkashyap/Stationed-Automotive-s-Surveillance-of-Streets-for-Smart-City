@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    color: var(--nokia-white-color); 
+}
+
+/* COLOR AND DIMENSION */
+
+:root {
+    --nokia-grey-color: #474747;   
+    --nokia-dark-grey-color: #1B1B1B;
+    --nokia-highlight-color: #00A1CC;
+    --nokia-black-color: #000;
+    --nokia-white-color: #eee;
+
+    --outer-margin: 5px;
+    --inner-margin: 5px;
+
+    --large-font-size: 16px;
+    --medium-font-size: 14px;
+    --small-font-size: 12px;
+}
+
+.app-header {
+    text-align: center;
+    background-color: var(--nokia-black-color);
+}
+
+.app-body {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* PANEL */
+
+#left-panel {
+    height: 100%;
+    max-height: 100%;
+    border-right: 1px solid var(--nokia-grey-color);
+    background-color: var(--nokia-grey-color);
+}
+
+#center-panel {
+
+}
+
+#right-panel {
+    height: 100%;
+    max-height: 100%;
+    border-left: 1px solid var(--nokia-black-color);
+}
+
+/* MENU */
+
+.menu {
+    text-align: center;
+    background-color: var(--nokia-black-color);
+    color: var(--nokia-white-color);
+}
+
+.menu-item {
+    font-size: var(--large-font-size);
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    margin: var(--outer-margin);
+}
+
+.menu .active {
+    color: var(--nokia-highlight-color);
+}
+
+.header {
+    margin: 8px;
+    font-size: var(--medium-font-size);
+    color: var(--nokia-highlight-color);
+}
+
+/* MISSION LIST TAB  */
+
+.mission-list {
+    -webkit-padding-start: 20px;
+}
+
+.mission-list li {
+    font-size: var(--small-font-size);
+    line-height: 25px; 
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.mission-list .active {
+    /* color: var(--nokia-highlight-color); */
+}
+
+.mission-list li:hover {
+    color: var(--nokia-highlight-color);
+}
+
+.mission-list li .selected {
+    float: right;
+}
+
+
+/* DRONE LIST TAB */
+
+.drone-list {
+    margin: 5px;
+}
+
+.drone {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid var(--nokia-black-color);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 2.5;
+    float: left;
+    margin: 5px;
+    font-size: 17px;
+}
+
+.drone-list .active {
+    border-color: var(--nokia-highlight-color);
+}
